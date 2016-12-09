@@ -1,4 +1,5 @@
 class Place < ActiveRecord::Base
+  has_many :photos
   belongs_to :user
   has_many :comments
   geocoded_by :address 

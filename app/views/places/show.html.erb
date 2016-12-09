@@ -45,7 +45,7 @@
 </div>
 </div>
 
-<div class = "coffeebox2">
+<!-- <div class = "coffeebox2">-->
 
 <div class = "clear"></div>
 
@@ -83,6 +83,41 @@
 </div>
 
 
+<div class = "clear"></div>
+
+<br/>
+ <!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg col-xs-5 pull-right" data-toggle="modal" data-target="#pictureModal">
+  Add a Photo
+</button>
+</div>
+<div class = "clear"></div>
+
+
+
+<!-- PictureModal -->
+<div class="modal fade" id="pictureModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="pictureModalLabel">Add a Photo</h4>
+      </div>
+      <div class="modal-body">
+        <%= simple_form_for @photo, :url => place_photos_path(@place) do |f| %>
+         <%= f.input :picture, as: :file %>
+         <%= f.input :caption %>
+       
+            
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         <%= f.submit "Upload", class: 'btn btn-primary' %>
+         <% end %>
+      </div>
+    </div>
+  </div>
+</div>
 
 <% @place.comments.each do |comment| %>
   <div class="col-xs-12 col-sm-6">
@@ -94,7 +129,13 @@
       <small><%= comment.user.email %></small>
     </blockquote>
   </div>
+<% end %>
+
+<div class = "clear"></div>
+ 
+<% @place.photos.each do |photo| %>
+<%= image_tag photo.picture %>
+<%= photo.caption %>
   <% end %>
+<!---</div>-->
 
-
-</div>
