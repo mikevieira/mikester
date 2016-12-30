@@ -49,7 +49,7 @@ def update
   end 
 end
 
-def delete 
+def destroy  
    @place = Place.find(params[:id])
    if @place.user != current_user
       return render text: "Not Allowed", status: :forbidden
