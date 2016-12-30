@@ -111,13 +111,12 @@
 <% if @place.photos.present? %>
 <h1 class = "text-center white">Photos of <%=@place.name%></h1> 
 <br/> 
-  <div class = "col-xs-4 col-xs-offset-1">
+  <!-- <div class = "col-xs-4 col-xs-offset-1">
     <%= image_tag @place.photos.first.picture, class: 'img-responsive' %>
-    </div>
-    <br/>
-    <div class = "col-xs-4 col-xs-offset-1">
+    </div> -->
+     <div class = "col-xs-4 col-xs-offset-1">
        <%= image_tag @place.photos.last.picture, class: 'img-responsive' %>
-   </div>
+   </div> 
    <br/>
    <% end %>   
 
