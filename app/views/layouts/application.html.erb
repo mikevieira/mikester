@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<div class= "wrapper">
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -57,6 +58,22 @@
 <% end %>
 
 <%= yield %>
+
+<div class = "clear"></div>
+<br/>
+<div class= "push"></div>
+
+</div> <!--wrapper-->
+
+<div class = "awesomefooter white">
+  
+      <div class="col-xs-4 clear pull-right">
+       <%= link_to  "Add a Coffee Shop",new_place_path, class: 'white'%>
+      </div>
+      <div class= "col-xs-4 clear pull-right">
+        <a class = "white", href = "http://mikevieira.getforge.io/"> Made by Mike! </a>
+      </div>
+</div>
 
 </body>
 </html>

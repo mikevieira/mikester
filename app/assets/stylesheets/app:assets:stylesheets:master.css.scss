@@ -110,8 +110,8 @@ blockquote p {
     max-height: 550px;
     width: 100%;
    
-
 }
+
 
 .carousel-caption {
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -128,3 +128,39 @@ blockquote p {
  
   padding-bottom: 0px;
 }
+
+.white {
+ color: #ffffff;
+ text-decoration: underline;
+ }
+
+
+* {
+ margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -5em;
+}
+
+.awesomefooter, .push {
+    height: 5em; 
+}
+.awesomefooter {
+/*background: url('/assets/cheap_diagonal_fabric.png');*/
+padding-top: 1em;
+
+}
+
+@media screen and (max-width:480px) {  
+  .awesomefooter {
+    display: none;
+  }
+}
+  
