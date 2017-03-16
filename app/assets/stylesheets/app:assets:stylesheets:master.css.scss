@@ -12,7 +12,7 @@
   margin-top: 10px;
   margin-bottom: 15px;
   padding:20px;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
  
-  background: url('/assets/beans-background.jpg');
+  background: url('/assets/seamlessbeans.jpg');
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-bottom: 70px;
 
@@ -156,6 +156,10 @@ html, body {
 /*background: url('/assets/cheap_diagonal_fabric.png');*/
 padding-top: 1em;
 
+}
+
+.mike a {
+  color: #fff;
 }
 
 @media screen and (max-width:480px) {  
